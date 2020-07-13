@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Intranet</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script type="text/javascript" src=cadastro.js></script>
+</head>
+
+<body>
+    <h1>Intranet</h1>
+    <h4>Atenção: os campos com (*) são obrigatórios.</h4>
+
+
+    <div class="form-transp">
+        <form>
+            * Nome:
+            <input type="text" placeholder="Nome Completo">
+            <br>
+            * Data de nascimento:
+            <!--onkeyup = se for preenchido o campo com 2 caracteres, vai para o próximo campo "mês".-->
+            <input id="dia" type="text" size="2" maxlength="2"
+                onkeyup="if(this.value.length==2)document.getElementById('mes').focus();" placeholder="DD">
+            /
+            <!--onkeyup = se for preenchido o campo com 2 caracteres, vai para o próximo campo "ano".-->
+            <input id="mes" type="text" size="2" maxlength="2"
+                onkeyup="if(this.value.length==2)document.getElementById('ano').focus();" placeholder="MM">
+            /
+            <!--onkeyup = se for preenchido o campo com 4 caracteres, vai para o próximo campo "empresa".-->
+            <input id="ano" type="text" size="4" maxlength="4"
+                onkeyup="if(this.value.length==4)document.getElementById('empresa').focus();" placeholder="AAAA"> <br>
+            <br>
+
+            * Empresa:
+            <input id="empresa" type="text" placeholder="Nome da Empresa"> <br> <br>
+
+            * Departamento:
+            <input type="text" placeholder="Setor"> <br> <br>
+
+            * Cargo:
+            <input type="text" placeholder="Função"> <br> <br>
+
+            * CEP:
+            <input type="text" placeholder="00000-000"> <br> <br>
+
+            * Estado:
+            <!--Opções estado-->
+            <select>
+                <option> - Selecione - </option>
+                <option> Acre </option>
+                <option> Alagoas </option>
+                <option> Amapá </option>
+                <option> Amazonas </option>
+                <option> Bahia </option>
+                <option> Ceará </option>
+                <option> Distrito Federal </option>
+                <option> Espírito Santo </option>
+                <option> Goiás</option>
+                <option> Maranhão </option>
+                <option> Mato Grosso </option>
+                <option> Mato Grosso do Sul </option>
+                <option> Minas Gerais </option>
+                <option> Pará </option>
+                <option> Paraíba </option>
+                <option> Paraná </option>
+                <option> Pernambuco </option>
+                <option> Piauí </option>
+                <option> Rio de Janeiro </option>
+                <option> Rio Grande do Norte </option>
+                <option> Rio Grande do Sul </option>
+                <option> Rondônia </option>
+                <option> Roraima </option>
+                <option> Santa Catarina </option>
+                <option> São Paulo </option>
+                <option> Sergipe </option>
+                <option> Tocantins </option>
+            </select>
+
+            <br>
+            <br>
+            * Cidade:
+            <input type="text" placeholder="Cidade"> <br> <br>
+
+            * Endereço:
+            <input type="text" placeholder="Rua"> <br> <br>
+
+
+            * Número:
+            <input type="text" placeholder="Número"> <br> <br>
+
+
+            Complemento:
+            <input type="text" placeholder="Casa, Apartamento..."> <br> <br>
+
+
+            * Telefone:
+
+            DDD:
+            <input type="text" size="3" maxlength="3" placeholder="000">
+            Nº:
+            <input type="text" size="10" maxlength="10" placeholder="0000-0000">
+            <br> <br>
+
+            Celular:
+            DDD:
+            <input type="text" size="3" maxlength="3" placeholder="000">
+            Nº:
+            <input type="text" size="10" maxlength="10" placeholder="90000-0000">
+            <br> <br>
+
+            * E-mail:
+            <input type="email" placeholder="email@gmail.com"> <br> <br>
+
+
+            * Senha:
+            <!--onkeyup=puxar função javascript para verificar a correspondência das senhas-->
+            <input onkeyup="verificarSenha();" type="password" id="senha01" placeholder="Senha"> <br> <br>
+
+
+            * Confirmação de Senha:
+            <input onkeyup="verificarSenha();" type="password" id="senha02" placeholder="Confirme sua senha">
+            <p id="resultado"></p>
+
+            <div class="botao">
+                <input type="submit" value="cadastrar">
+                <!--botão voltar-->
+                <a href="home.html"><input type="button" value="voltar"> </a>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

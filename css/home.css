@@ -1,0 +1,101 @@
+/*corpo do site*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(truck2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman';
+}
+/*imagem da logo transportadora*/
+.imagem1{
+    width:400px;
+    height:200px;
+    margin-left: 900px;
+    
+}
+/*formulario de login*/
+.formulario-transparente {
+border-radius: 25px;
+position: absolute;
+top: 60%;
+left: 80%;
+transform: translate(-50%,-50%);
+width:300px;
+height:335px;
+box-sizing: border-box;
+background: rgba(0,0,0,0.5);
+padding:35px;      
+}
+h3 {
+margin: 0 auto;
+padding: 0 0 20px;
+font-weight: bold;
+color: white;
+}
+.formulario-transparente p {
+margin:0 auto;
+padding:0;
+font-weight:bold;
+color:white;
+}
+/*input do formulario de login*/
+.formulario-transparente input, select{
+margin-bottom:20px;
+width:100%;
+}
+/*input do formulario de login e-mail*/
+.formulario-transparente input[type=text],
+.formulario-transparente input[type=email] {
+border: none;
+border-bottom: 1px solid #ffffff;
+background-color: transparent;
+outline: none;
+height: 40px;
+color: white;
+display: 15px;
+}
+/*input do formulario de login senha*/
+.formulario-transparente input[type=text],
+.formulario-transparente input[type=password]{
+border:none;
+border-bottom:1px solid #ffffff;
+background-color:transparent;
+outline:none;
+height:40px;
+color:white;
+display:20px;
+}
+/*texto do campo input e-mail e senha na cor branca*/
+::placeholder{
+color:white;
+}
+/*input do formulario de login botão*/
+.formulario-transparente input[type=button]{
+border: none;
+height: 40px;
+outline: none;
+color: white;
+font-size: 15px;
+background-color: rgba(250, 250, 210, 0.23);
+cursor: pointer;
+border-radius: 20px;
+}
+/*botão acessar e cadastre-se*/
+.formulario-transparente button
+{
+    border: none;
+    height: 40px;
+    width: 220px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(250, 250, 210, 0.23);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.formulario-transparente input[type=button]:hover{
+background-color:rgba(128, 128, 128, 0.19);
+color:white;
+}
